@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(235, 240, 237);
+  color: rgb(90, 90, 90);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.guidebooksContainer,
+.weekendContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  max-width: 1200px;
+}
+.imagesContainer {
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imageThumbnail {
+  width: 30%;
+  height: 20vh;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .imageThumbnail {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+  }
+}
+.imageThumbnail p {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 40px;
+}
